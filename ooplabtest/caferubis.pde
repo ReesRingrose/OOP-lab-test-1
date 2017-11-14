@@ -1,3 +1,6 @@
+// rees Ringrose C15388176 OOP lab test 1
+
+
 product[] product;
 ArrayList<bill> bill;
 void setup()
@@ -24,6 +27,10 @@ void setup()
   }
 
   size(800,600);
+  background(200);
+    fill(251);
+    stroke(1);
+    rect(436,117,271,467);
    
   //Rees Ringrose C15388176
   
@@ -36,9 +43,19 @@ void draw()
 {
     printproducts();
    
-   
+   displaybill();
   
  
   
   
+}
+
+
+void mousePressed() 
+{
+     for(int i = 0 ; i<product.length ; i++)
+  {
+    product[i].check();
+  }
+
 }
