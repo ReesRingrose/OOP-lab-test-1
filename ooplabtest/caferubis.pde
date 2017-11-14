@@ -1,5 +1,5 @@
 product[] product;
-
+ArrayList<bill> bill;
 void setup()
 {
   Table table = loadTable("menu.CSV","header");
@@ -16,6 +16,10 @@ void setup()
     float price = row.getFloat("Price");
     
     product[i] = new product(price,name);
+    
+    bill = new ArrayList<bill>();
+  
+  
     
   }
 
